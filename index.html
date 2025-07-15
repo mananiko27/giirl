@@ -1,115 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>mARTa – Crafts</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Brush Script MT', cursive;
-            background-image: url('texture.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
-        nav {
-            background-color: rgba(255, 255, 255, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 50px;
-        }
-
-        .logo img {
-            height: 80px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 40px;
-        }
-
-        .nav-links a {
-            color: green;
-            font-size: 24px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 100px 50px;
-            min-height: 100vh;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .gallery img {
-            width: 300px;
-            height: auto;
-            border: 4px solid #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 36px;
-            color: darkgreen;
-            margin-bottom: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-<nav>
-    <div class="logo">
-        <img src="logo.jpg" alt="mARTa logo">
-    </div>
-    <div class="nav-links">
-        <a href="#main">Main</a>
-        <a href="#marta">mARTa</a>
-        <a href="#handmade">Handmade</a>
-        <a href="#workshop">Workshop Corner</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
-<section id="main">
-</section>
-
-<section id="marta" style="background-image: url('texture2.jpg'); background-size: cover;">
-</section>
-
-<section id="handmade">
-    <h2>Handmade Collection</h2>
-    <div class="gallery">
-        <img src="purple.jpeg" alt="Purple">
-        <img src="lace_cup.jpeg" alt="Lace Cup">
-        <img src="floral_heart.jpeg" alt="Floral Heart">
-        <img src="bouquet.jpeg" alt="Bouquet">
-        <img src="rainbow.jpeg" alt="Rainbow Heart">
-        <img src="blooming_heart.jpeg" alt="Blooming Heart">
-        <img src="mixed_heart.jpeg" alt="Mixed Heart">
-        <img src="petals.jpeg" alt="Petals">
-        <img src="cosmic_swirl.jpeg" alt="Cosmic Swirl">
-    </div>
-</section>
-
-<section id="workshop">
-    <h2>Workshop Corner</h2>
-    <p style="text-align: center;">Coming soon...</p>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p style="text-align: center;">If you'd like to get in touch, please email me at <a href="mailto:example@example.com">example@example.com</a></p>
-</section>
-
+    <nav>
+        <img src="assets/images/logo.jpg" alt="mARTa Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#main">Main</a></li>
+            <li><a href="#marta">mARTa</a></li>
+            <li><a href="#handmade">Handmade</a></li>
+            <li><a href="#workshop">Workshop Corner</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="main"><h1>Welcome to mARTa</h1></section>
+    <section id="marta"><h2>About mARTa</h2><p>Content coming soon...</p></section>
+    <section id="handmade"><h2>Handmade Collection</h2><div class="gallery">[Images here]</div></section>
+    <section id="workshop"><h2>Workshop Corner</h2></section>
+    <section id="contact"><h2>Contact</h2><p>Email us at example@example.com</p></section>
 </body>
 </html>
