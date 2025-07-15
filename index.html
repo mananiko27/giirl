@@ -3,137 +3,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>mARTa – girl with a baloon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"/>
   <style>
     body {
       margin: 0;
       font-family: 'Dancing Script', cursive;
-      background: url('texture.jpg') repeat;
+      background-image: url('texture.jpg');
       background-size: cover;
-      color: #3e2f2f;
+      background-attachment: fixed;
+      color: #5e3e2f;
     }
 
     nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      background-color: rgba(255, 255, 255, 0.6);
       position: fixed;
-      width: 100%;
       top: 0;
-      z-index: 10;
-      padding: 1em 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 2rem;
+      z-index: 1000;
     }
 
-    nav img.logo {
-      height: 70px;
+    .nav-left img {
+      height: 60px;
     }
 
-    nav a {
+    .nav-right {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-right a {
       text-decoration: none;
-      color: #49794e;
-      font-size: 1.4em;
-      margin: 0 10px;
+      font-size: 1.4rem;
+      color: #5e3e2f;
       display: flex;
+      flex-direction: column;
       align-items: center;
     }
 
-    nav a img.flower {
+    .nav-right img {
       width: 16px;
-      height: 16px;
-      margin-right: 5px;
+      margin-bottom: 2px;
     }
 
-    .section {
-      padding: 120px 20px 40px;
-      max-width: 1000px;
-      margin: 0 auto;
+    section {
+      padding: 100px 2rem 2rem;
+      min-height: 100vh;
     }
 
-    .section h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+    #main {
+      background-image: url('texture.jpg');
     }
 
-    .title-row {
+    #marta {
+      background-image: url('texture2.jpg');
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.4rem;
+      font-weight: normal;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .title span {
+      font-style: italic;
+    }
+
+    .marta-section {
+      max-width: 900px;
+      margin: 2rem auto;
       display: flex;
-      align-items: center;
-      gap: 15px;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
 
-    .title-row img {
-      height: 40px;
+    .marta-section img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
     }
 
-    .image-paragraph {
-      display: flex;
-      align-items: center;
-      margin: 40px 0;
-    }
-
-    .image-paragraph img {
-      max-width: 200px;
-      margin-right: 20px;
-      border-radius: 8px;
-    }
-
-    .image-paragraph p {
-      font-size: 1.2em;
-      line-height: 1.6;
+    .marta-text {
       flex: 1;
+      font-size: 1.2rem;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <img src="logo.jpg" alt="Logo" class="logo" />
-    <a href="#main"><img src="yellow_flower_transparent.png" class="flower" />main</a>
-    <a href="#marta"><img src="pink_flower_transparent.png" class="flower" />mARTa</a>
-    <a href="#handmade"><img src="teal_flower_transparent.png" class="flower" />handmade</a>
-    <a href="#workshop"><img src="yellow_flower_transparent.png" class="flower" />workshop corner</a>
-    <a href="#contact"><img src="pink_flower_transparent.png" class="flower" />get in touch</a>
+    <div class="nav-left">
+      <img src="logo.jpg" alt="logo" />
+    </div>
+    <div class="nav-right">
+      <a href="#main"><img src="yellow_flower_transparent.png"/><span>main</span></a>
+      <a href="#marta"><img src="pink_flower_transparent.png"/><span><span style="font-style: italic;">mARTa</span></span></a>
+      <a href="#handmade"><img src="teal_flower_transparent.png"/><span>handmade</span></a>
+      <a href="#workshop"><img src="yellow_flower_transparent.png"/><span>workshop corner</span></a>
+      <a href="#contact"><img src="pink_flower_transparent.png"/><span>get in touch</span></a>
+    </div>
   </nav>
 
-  <div class="section" id="main">
-    <h2>Welcome to mARTa</h2>
-    <p>This is a place of color, play, memory, and love — a glimpse into handmade joy, creative workshops, and heartfelt connection.</p>
-  </div>
+  <section id="main">
+    <h1 class="title">Welcome to <span>mARTa</span></h1>
+    <p style="text-align: center; font-size: 1.3rem;">
+      This is a place of color, play, memory, and love — a glimpse into handmade joy, creative workshops, and heartfelt connection.
+    </p>
+  </section>
 
-  <div class="section" id="marta" style="background: url('texture2.jpg') repeat; background-size: cover;">
-    <div class="title-row">
-      <h2 style="color: white;"><em>mARTa</em> – girl with a baloon</h2>
-      <img src="balloon.jpg" alt="Balloon image" />
+  <section id="marta">
+    <h1 class="title"><span>mARTa</span> – girl with a baloon <img src="balloon.jpg" alt="balloon" style="width: 30px; vertical-align: middle;"/></h1>
+    <div class="marta-section">
+      <img src="peach.jpg" alt="Peach Art"/>
+      <div class="marta-text">
+        <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
+        <p>Her sense of color, shape, and beauty ran deep. Her works echo the purity of thought and the wild stretch of imagination.</p>
+      </div>
     </div>
-    <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
-
-    <div class="image-paragraph">
-      <img src="peach.jpg" alt="Peach painting" />
-      <p>Her sense of color, shape, and beauty ran deep. Her works echo the purity of thought and the wild strength of imagination.</p>
-    </div>
-
-    <div class="image-paragraph">
-      <img src="sunflower.jpg" alt="Sunflower painting" />
-      <p>Every petal and brushstroke she touched bloomed with more than paint — it carried warmth and light like the sunflower itself.</p>
-    </div>
-
-    <div class="image-paragraph">
-      <img src="rainbow.jpg" alt="Rainbow painting" />
-      <p>She saw color where the world saw gray. Her rainbows were real — not just arches in the sky, but symbols of feeling.</p>
-    </div>
-
-    <div class="image-paragraph">
-      <img src="picasso.jpg" alt="Picasso painting" />
-      <p>Inspired yet original, she played with abstraction like a little Picasso, expressing her truth with every angle and swirl.</p>
-    </div>
-
-    <div class="image-paragraph">
-      <img src="branch.jpg" alt="Branch painting" />
-      <p>Nature lived in her — from the fragile curl of a leaf to the strength of a branch. Her soul was rooted, yet free.</p>
-    </div>
-  </div>
+  </section>
 
 </body>
 </html>
