@@ -2,86 +2,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>mARTa – Crafts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    <meta charset="UTF-8">
+    <title>mARTa – Crafts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Brush Script MT', cursive;
+            background-image: url('texture.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-    nav {
-      background-color: transparent;
-      padding: 1em 0;
-    }
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+        }
 
-    .nav-bar {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      font-size: 1.3rem;
-      font-family: 'Cedarville Cursive', cursive;
-    }
+        .logo img {
+            height: 80px;
+        }
 
-    .nav-bar li a {
-      color: #3f583f;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
+        .nav-links {
+            display: flex;
+            gap: 40px;
+        }
 
-    .nav-bar li a:hover {
-      color: #ff69b4;
-    }
+        .nav-links a {
+            color: green;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    .contact-section {
-      background-image: url('texture2.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 100px 20px;
-      text-align: center;
-      color: #333;
-      min-height: 100vh;
-    }
+        section {
+            padding: 100px 50px;
+            min-height: 100vh;
+        }
 
-    .contact-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      font-family: 'Cedarville Cursive', cursive;
-    }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-    .contact-section a {
-      color: #336699;
-      text-decoration: underline;
-    }
-  </style>
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            color: darkgreen;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-    <ul class="nav-bar">
-      <li><a href="#main">Main</a></li>
-      <li><a href="#marta">mARTa</a></li>
-      <li><a href="#handmade">Handmade</a></li>
-      <li><a href="#workshop">Workshop Corner</a></li>
-      <li><a href="#contact">Get in Touch</a></li>
-    </ul>
-  </nav>
-
-  <section id="main">
-    <!-- Main section left blank as requested -->
-  </section>
-
-  <section id="contact" class="contact-section">
-    <div class="contact-content">
-      <h2>Contact</h2>
-      <p>If you'd like to get in touch, please email me at <a href="mailto:example@example.com">example@example.com</a></p>
+<nav>
+    <div class="logo">
+        <img src="logo.jpg" alt="mARTa logo">
     </div>
-  </section>
+    <div class="nav-links">
+        <a href="#main">Main</a>
+        <a href="#marta">mARTa</a>
+        <a href="#handmade">Handmade</a>
+        <a href="#workshop">Workshop Corner</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section id="main">
+</section>
+
+<section id="marta" style="background-image: url('texture2.jpg'); background-size: cover;">
+</section>
+
+<section id="handmade">
+    <h2>Handmade Collection</h2>
+    <div class="gallery">
+        <img src="purple.jpeg" alt="Purple">
+        <img src="lace_cup.jpeg" alt="Lace Cup">
+        <img src="floral_heart.jpeg" alt="Floral Heart">
+        <img src="bouquet.jpeg" alt="Bouquet">
+        <img src="rainbow.jpeg" alt="Rainbow Heart">
+        <img src="blooming_heart.jpeg" alt="Blooming Heart">
+        <img src="mixed_heart.jpeg" alt="Mixed Heart">
+        <img src="petals.jpeg" alt="Petals">
+        <img src="cosmic_swirl.jpeg" alt="Cosmic Swirl">
+    </div>
+</section>
+
+<section id="workshop">
+    <h2>Workshop Corner</h2>
+    <p style="text-align: center;">Coming soon...</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align: center;">If you'd like to get in touch, please email me at <a href="mailto:example@example.com">example@example.com</a></p>
+</section>
 
 </body>
 </html>
