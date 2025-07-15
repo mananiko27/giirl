@@ -2,109 +2,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>mARTa – girl with a balloon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Dancing Script', cursive;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0.5rem 2rem;
-            z-index: 1000;
-        }
-        .logo {
-            height: 80px;
-        }
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav a {
-            color: #3b7d3f;
-            font-size: 1.5rem;
-            text-decoration: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        nav a img {
-            height: 14px;
-            margin-bottom: 2px;
-        }
-        section {
-            padding: 140px 40px 60px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            min-height: 100vh;
-        }
-        #main {
-            background-image: url("texture.jpg");
-        }
-        #marta {
-            background-image: url("texture2.jpg");
-        }
-        .content-box {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 2rem;
-            border-radius: 12px;
-        }
-        .marta-images {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1rem;
-        }
-        .marta-images img {
-            max-width: 45%;
-            height: auto;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>mARTa – Crafts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Dancing Script', cursive;
+      background-color: #fefefe;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      height: 70px;
+    }
+    nav {
+      display: flex;
+      gap: 40px;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-grow: 1;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #888;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery-item {
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      border-radius: 8px;
+    }
+    .gallery-item img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .gallery-item p {
+      margin-top: 8px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img class="logo" src="logo.jpg" alt="Logo">
-        <nav>
-            <a href="#main"><img src="yellow_flower_transparent.png" alt=""><span>main</span></a>
-            <a href="#marta"><img src="pink_flower_transparent.png" alt=""><span>mARTa</span></a>
-            <a href="#handmade"><img src="teal_flower_transparent.png" alt=""><span>handmade</span></a>
-            <a href="#workshop"><img src="yellow_flower_transparent.png" alt=""><span>workshop corner</span></a>
-            <a href="#contact"><img src="pink_flower_transparent.png" alt=""><span>get in touch</span></a>
-        </nav>
-    </header>
+  <header>
+    <img src="logo.jpg" alt="mARTa Logo" class="logo">
+    <nav>
+      <a href="#home">Main</a>
+      <a href="#marta">mARTa</a>
+      <a href="#crafts">Handmade</a>
+      <a href="#workshop">Workshop Corner</a>
+      <a href="#contact">Get in Touch</a>
+    </nav>
+  </header>
 
-    <section id="main">
-        <!-- Intentionally left blank -->
-    </section>
+  <section id="crafts" class="gallery">
 
-    <section id="marta">
-        <div class="content-box">
-            <h1><em>mARTa</em> – girl with a balloon <img src="texture2.jpg" alt="balloon" style="height: 1.2rem; vertical-align: middle;"></h1>
-            <p>This space is born from love, devotion, and an eternal bond. It is dedicated to my sweet, blissful, strong-minded, and deeply artistic daughter, Martha — eternally in our hearts, eternally unattainable, eternally 8 years old. She left behind a world of inspiration which lives on in every piece I create.</p>
-            <div class="marta-images">
-                <img src="peach.jpg" alt="Peach">
-                <img src="sunflower.jpg" alt="Sunflower">
-            </div>
-            <p>Her sense of color, shape, and beauty ran deep. Her works echo the purity of thought and the wild stretch of imagination.</p>
-            <p>Each art she painted radiates from the center of her being — playful, bright, full of light.</p>
-            <p>The rainbow in her hands was never just colors — it was harmony, spirit, and a touch of skywind.</p>
-            <p>Her strokes could be whimsical and fierce — raw emotion shaped through vision. Every face she painted had story, every line — a voice.</p>
-            <p>She once said, “Branches are thoughts.” Her painting were thoughts — a bloom from imagination’s form.</p>
-        </div>
-    </section>
-
+  </section>
 </body>
 </html>
