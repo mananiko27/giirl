@@ -3,84 +3,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>mARTa – Crafts</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Dancing Script', cursive;
-      background-color: #fefefe;
+      font-family: Arial, sans-serif;
     }
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px 40px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .logo {
-      height: 70px;
-    }
+
     nav {
+      background-color: transparent;
+      padding: 1em 0;
+    }
+
+    .nav-bar {
       display: flex;
-      gap: 40px;
       justify-content: space-evenly;
       align-items: center;
-      flex-grow: 1;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 1.3rem;
+      font-family: 'Cedarville Cursive', cursive;
     }
-    nav a {
+
+    .nav-bar li a {
+      color: #3f583f;
       text-decoration: none;
-      color: #333;
-      font-size: 24px;
-      font-weight: bold;
+      transition: color 0.3s ease;
     }
-    nav a:hover {
-      color: #888;
+
+    .nav-bar li a:hover {
+      color: #ff69b4;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .gallery-item {
-      background-color: #fff;
-      padding: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+    .contact-section {
+      background-image: url('texture2.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
       text-align: center;
-      border-radius: 8px;
-    }
-    .gallery-item img {
-      width: 100%;
-      max-width: 100%;
-      border-radius: 6px;
-    }
-    .gallery-item p {
-      margin-top: 8px;
-      font-size: 20px;
       color: #333;
+      min-height: 100vh;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-family: 'Cedarville Cursive', cursive;
+    }
+
+    .contact-section a {
+      color: #336699;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.jpg" alt="mARTa Logo" class="logo">
-    <nav>
-      <a href="#home">Main</a>
-      <a href="#marta">mARTa</a>
-      <a href="#crafts">Handmade</a>
-      <a href="#workshop">Workshop Corner</a>
-      <a href="#contact">Get in Touch</a>
-    </nav>
-  </header>
 
-  <section id="crafts" class="gallery">
+  <nav>
+    <ul class="nav-bar">
+      <li><a href="#main">Main</a></li>
+      <li><a href="#marta">mARTa</a></li>
+      <li><a href="#handmade">Handmade</a></li>
+      <li><a href="#workshop">Workshop Corner</a></li>
+      <li><a href="#contact">Get in Touch</a></li>
+    </ul>
+  </nav>
 
+  <section id="main">
+    <!-- Main section left blank as requested -->
   </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-content">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, please email me at <a href="mailto:example@example.com">example@example.com</a></p>
+    </div>
+  </section>
+
 </body>
 </html>
